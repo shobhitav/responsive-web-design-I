@@ -1,3 +1,368 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
+body {
+  line-height: 1;
+}
+
+/* ol, ul {
+list-style: none;
+} */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! for great idea webpage */
+.main-container {
+  width: 900px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageandlogo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-left: 0px;
+  margin-right: 9%;
+}
+
+.services {
+  margin-right: 50px;
+}
+
+.product {
+  margin-right: 50px;
+}
+
+.vision {
+  margin-right: 50px;
+}
+
+.features {
+  margin-right: 50px;
+}
+
+.about {
+  margin-right: 50px;
+}
+
+.contact {
+  margin-right: 50px;
+}
+
+.navigation p {
+  color: gray;
+}
+
+.logo-box {
+  margin-top: 22px;
+}
+
+.inlineblock h1 {
+  width: 60%;
+  height: 50%;
+  font-size: 450%;
+  margin-top: 25%;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imageandtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonfirst {
+  border: 1px solid black;
+  width: 35%;
+  height: 7%;
+  margin-left: 38%;
+  padding: 1%;
+  text-align: center;
+}
+
+.inlineblock {
+  display: inline-block;
+}
+
+.image-container {
+  margin-top: 8%;
+  margin-right: 7%;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+  border-top: 1px solid black;
+}
+
+.paragraph1 {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.paragraph2 {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-left: : 20px;
+}
+
+.secondsection {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3%;
+  border-bottom: 1px solid black;
+}
+
+.footer {
+  margin: 20px, 20px;
+}
+
+.footer p {
+  padding: 2%;
+}
+
+.copyright {
+  margin-left: 40%;
+}
+
+/*Media Queries for tablet screen*/
+@media (max-width:800px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .imageandlogo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .imageandtitle .image-container {
+    display: none;
+  }
+
+  .inlineblock {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .buttonfirst {
+    width: 60%;
+    margin-top: 18%;
+    margin-left: 30%;
+    margin-bottom: 0%;
+  }
+
+  .logo-box {
+    margin-left: 80%;
+  }
+
+  .product {
+    margin-left: 30px;
+  }
+
+  .vision {
+    margin-left: 30px;
+  }
+
+  .features {
+    margin-left: 30px;
+  }
+
+  .about {
+    margin-left: 30px;
+  }
+
+  .contact {
+    margin-left: 30px;
+  }
+
+  .firstsection {
+    width: 100%;
+    border-top: 1px solid black;
+  }
+
+  /*media queries for mobile page*/
+  @media only screen and (max-width:500px) {
+    .main-container {
+      width: 100%;
+      background-color: white;
+    }
+
+    .imageandlogo {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    .logo-box {
+      width: 100%;
+      height: 13%;
+      margin-left: 36%;
+    }
+
+    .navigation {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .services {
+      width: 100%;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 120%;
+      margin-left: 30px;
+    }
+
+    .product {
+      width: 100%;
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 120%;
+    }
+
+    .vision {
+      width: 100%;
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 120%;
+    }
+
+    .features {
+      width: 100%;
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 120%;
+    }
+
+    .about {
+      width: 100%;
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 120%;
+    }
+
+    .contact {
+      width: 100%;
+      border-bottom: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 120%;
+    }
+
+    .imageandtitle .image-container {
+      display: none;
+    }
+
+    .inlineblock h1 {
+      width: 80%;
+      text-align: center;
+    }
+
+    .buttonfirst {
+      width: 66%;
+      height: 32px;
+      text-align: center;
+    }
+
+    .firstsection {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-top: 1px solid black;
+    }
+
+    .secondsection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .paragraph3 p {
+      padding-bottom: 20px;
+    }
+
+    .paragraph4 p {
+      padding-bottom: 20px;
+    }
+
+    .paragraph5 p {
+      padding-bottom: 20px;
+    }
+  }
